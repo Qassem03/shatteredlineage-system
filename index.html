@@ -87,6 +87,25 @@
             font-size: 1.1rem;
             color: #4fc3f7;
             font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .creators-email {
+            font-size: 1rem;
+            color: #81d4fa;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .creators-email a {
+            color: #00edff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .creators-email a:hover {
+            color: #4fc3f7;
+            text-decoration: underline;
         }
 
         /* Character Gallery */
@@ -508,6 +527,23 @@
             margin-bottom: 10px;
         }
 
+        .footer-email {
+            color: #b0d8ff;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .footer-email a {
+            color: #00edff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-email a:hover {
+            color: #4fc3f7;
+            text-decoration: underline;
+        }
+
         .footer-copyright {
             color: #aaa;
             margin-top: 10px;
@@ -689,6 +725,7 @@
                 Face challenging bosses in a beautifully crafted world where every battle tells a story.
             </p>
             <div class="creators">CREATED BY: QASIM ALMAHOOZI & AYMAN ZAIDAN</div>
+            <div class="creators-email">Contact: <a href="mailto:info@shatteredlineage.it.com">info@shatteredlineage.it.com</a></div>
         </div>
 
         <!-- Character Section -->
@@ -778,6 +815,7 @@
             <div class="footer-university">College of Information Technology</div>
             <div class="footer-university">Department of Information Systems</div>
             <div class="footer-supervisor">Project Supervisor: Dr. Ghassan Al Koureiti</div>
+            <div class="footer-email">Email: <a href="mailto:info@shatteredlineage.it.com">info@shatteredlineage.it.com</a></div>
             <div class="footer-copyright">SHATTERED LINEAGE © 2025 | SENIOR PROJECT GAME</div>
         </div>
     </div>
@@ -814,10 +852,10 @@
             button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> DOWNLOADING...';
             button.disabled = true;
             
-    // Create a temporary download link
-    const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://github.com/Qassem03/shatteredlineage-system/releases/download/ShatteredLineage/Shattered.Lineage.Game.Demo.rar';
-    downloadLink.download = 'Shattered Lineage Game Demo.rar';
+            // Create a temporary download link
+            const downloadLink = document.createElement('a');
+            downloadLink.href = 'https://github.com/Qassem03/shatteredlineage-system/releases/download/ShatteredLineage/Shattered.Lineage.Game.Demo.rar';
+            downloadLink.download = 'Shattered Lineage Game Demo.rar';
             
             // Simulate download process
             setTimeout(() => {
